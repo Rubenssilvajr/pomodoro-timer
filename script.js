@@ -118,7 +118,7 @@ function start() {
 
 function pause() {
   running = false;
-  startPauseBtn.textContent = 'Continuar';
+  startPauseBtn.textContent = secondsLeft === totalSeconds ? 'Iniciar' : 'Continuar';
   clearInterval(intervalId);
 }
 
